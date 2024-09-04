@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+  }
+
+
+#Page{
+width: 100%;
+height: 100vh;
+background:#eee;
+}
+
+
+.register .content , .login .content {
+width: 90%;
+height: 60%;
+}
+
+
+
+@media(min-width:767px){
+    .register .content ,
+     .login .content {
+        width: 60%; 
+        }
+
+    }
+
+
+
+svg{
+    width: 60px
+}
+
+.Logo{
+    width:40px
+}
+
+    .register p , .login p{
+    color: #f55
+    }
+
+
+.loader{
+    border: 8px solid rgba(0, 0, 0, 0.1); /* Light grey background */
+    border-left: 8px solid gray; /* Blue color */
+    border-top: 8px solid gray; /* Blue color */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.profile .content{
+    width: 85%;
+}
+
+@media(max-width:767px){
+    .profile .content{
+        width: 100%;
+    }    
+
+    .profile .head{
+        text-align: center
+    }
+}
+
+.profile .followers a{
+    width: fit-content
+}
+
+.pro_image-mini{
+    width:90px;
+    height: 80px;
+    border-radius: 40000px;
+}
+
+
+.pro_image{
+    width:90px;
+    height:80px;
+    border-radius: 50%;
+    object-fit:cover;
+}
+.pro_image-min{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    object-fit:cover;
+}
+
+
+
+textarea{
+    resize: none;
+    min-height:50px;
+    height:60px;
+}
+.pro_image_min{
+    width:70px;
+    height:70px;
+    border-radius: 300px;
+    object-fit:cover;
+
+}
+
+.image{
+    height: auto
+}
+.updateProfile .head:hover   .camera_icon{
+    opacity: .7 !important
+}
+.camera_icon{
+    left: 50%;
+    top:50%;
+    transform: translate(-50% , -50% );
+    font-size:50px;
+    width: 100%;
+    height:100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color:#fff;
+    opacity: 0.6;
+    transition:.3s
+}
+
+/* في ملف CSS مخصص */
+.fade-in {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.fade-out {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-out.hide {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.updateProfile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+.overLay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.post_image_min{
+    max-width:30%;
+    border-radius:12px
+}
+.post_creator{
+    width:60px;
+    height:60px;
+    border-radius: 50%
+}
+
+.post-content{
+    width:100% !important;
+}
+
+
+.post_image{
+    max-width: 50%;
+    border-radius: 6px
+}
+
+
+.post-text{
+    line-height: 2;
+    word-spacing: 2px;
+    letter-spacing: .5px
+}
+
+
+.form_store_content{
+    width: 50%;
+}
+
+@media(max-width:767px){
+    .form_store_content{
+        width: 80%;
+    }
+    
+}
+
+
+::-webkit-scrollbar{
+    display: none
+}
+
+
+.create-image{
+    max-width: 60%;
+    margin: auto;
+    border-radius: 12px
+}
+
+img{
+    object-fit: cover
+}
+.inset-center{
+    left:50%;
+    top:50%;
+    transform: translate(-50% , -50%)
+}
